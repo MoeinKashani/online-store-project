@@ -1,4 +1,67 @@
-<link href="./css/output.css" rel="stylesheet">
-<h1 class="text-3xl font-bold text-blue-500">
-  Tailwind is working!
-</h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./css/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+  </head>
+  <body class="p-4 bg-white relative">
+    <!-- <div
+      class="absolute top-125 right-46 w-60 h-60 rounded-full bg-red-900/60 blur-3xl"
+    ></div> -->
+    <header
+      class="cart border-2 border-blue-500/5 shadow-sm p-4 rounded-t-2xl rounded-b-md flex flex-wrap justify-between"
+    >
+      <div class="flex flex-wrap gap-3">
+        <div class="cart flex">
+          <i
+            class="fa-solid fa-cart-shopping text-blue-600 text-2xl p-2"
+          ></i>
+        </div>
+        <div
+          class="signIn flex bg-linear-to-r from-blue-600 to-blue-700 p-2 rounded-md text-white font-mono font-bold"
+        >
+          ثبت نام | ورود
+        </div>
+      </div>
+      <div class="flex flex-wrap gap-5">
+        <div class="searchBar  flex flex-wrap border-2 border-blue-500/5 shadow-sm rounded-md w-96 h-10">
+          <input
+            class=" placeholder:font-serif placeholder:text-gray-300 flex flex-150 focus:outline-blue-600 transition duration-200"
+            type="text"
+            name=""
+            id=""
+            placeholder="جست و جو"
+          />
+          <div class=" p-2 flex-1 text-blue-900/70"><i class="fa-solid fa-magnifying-glass cursor-pointer"></i></div></i>
+        </div>
+        <div class="logo flex">
+          <div
+            class="text-2xl font-bold fontmono bg-linear-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent m-1"
+          >
+            جورکالا
+          </div>
+          <img
+            class="w-10 h-8 rounded-2xl mt-2"
+            src="/Online-Store-Project/images/Minimal Blue Shopping Cart Emblem.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </header>
+    <nav
+      class="cart border-2 border-blue-500/5 shadow-sm p-6 rounded-md my-2"
+    ></nav>
+    <main
+      class="cart border-2 border-blue-500/5 shadow-sm p-6 rounded-md my-2"
+    ></main>
+    <footer
+      class="cart border-2 border-blue-500/5 shadow-sm p-6 rounded-md rounded-b-2xl my-2"
+    ></footer>
+  </body>
+</html>
