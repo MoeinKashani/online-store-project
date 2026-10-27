@@ -1,16 +1,16 @@
 <!doctype html>
-<html lang="en" dir="rtl">
+<html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>JoorKala</title>
     <link href="./src/output.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
     />
   </head>
-  <body class="p-4 bg-white relative">
+  <body class="p-4 bg-white relative font-sans">
     <header
       dir="ltr"
       class="cart border-2 border-blue-500/5 shadow-sm p-4 rounded-t-2xl rounded-b-md flex flex-wrap justify-between"
@@ -22,9 +22,9 @@
           ></i>
         </div>
         <div
-          class="signIn flex bg-linear-to-r cursor-pointer from-blue-600 to-blue-700 p-2 rounded-md text-white font-mono font-bold"
+          class="signIn border-2 hover:border-blue-950 flex bg-linear-to-r cursor-pointer from-blue-500 to-blue-600 p-2 rounded-md text-white font-mono font-bold"
         >
-          ثبت نام | ورود
+         <a href="./signup.html"> ثبت نام | ورود </a>
         </div>
       </div>
       <div class="flex flex-wrap gap-5">
@@ -33,7 +33,7 @@
         >
           <input
             dir="rtl"
-            class="placeholder:mx-1 placeholder:font-serif placeholder:text-gray-300 flex flex-150 focus:outline-blue-600 transition duration-200"
+            class="placeholder:mx-1 placeholder:font-serif placeholder:text-gray-300 flex flex-150 focus:outline-blue-600"
             type="text"
             name=""
             id=""
@@ -52,7 +52,7 @@
             جورکالا
           </div>
           <img
-            class="w-10 h-8 rounded-2xl mt-2"
+            class="w-10 h-8 rounded-md mt-2"
             src="/Online-Store-Project/images/Minimal Blue Shopping Cart Emblem.png"
             alt=""
           />
@@ -67,32 +67,32 @@
         <i class="fa-solid fa-bars"></i>
       </div>
       <div
-        class="font-sans flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
+        class="flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
       >
         کالای دیجیتال
       </div>
       <div
-        class="font-sans flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
+        class="flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
       >
         خانه و آشپزخانه
       </div>
       <div
-        class="font-sans flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
+        class="flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
       >
         مد و پوشاک
       </div>
       <div
-        class="font-sans flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
+        class="flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
       >
         طلا و نقره
       </div>
       <div
-        class="font-sans flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
+        class="flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
       >
         سوپرمارکت
       </div>
       <div
-        class="font-sans flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
+        class="flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
       >
         خودرو و موتورسیکلت
       </div>
@@ -101,96 +101,447 @@
       <img
         src="./images/Modern Online Shopping Electronics Banner.png"
         alt=""
-        class="rounded-lg"
+        class="rounded-lg mb-6"
       />
     </section>
-    <main class="cart border-2 border-blue-500/5 shadow-sm p-6 rounded-md my-2">
+    <main class="cart rounded-md my-2">
+      <section
+        class="rounded-md bg-linear-to-r from-blue-500 to-blue-700 relative p-5 pr-30"
+      >
+        <div class="absolute flex right-4 h-65 w-25 text-3xl  text-white items-center">
+          فروش شگفت انگیز
+        </div>
+        <div
+          class="rightBtn absolute flex h-65 bg-gray-600/50 w-7 right-30 justify-center text-3xl items-center font-extrabold rounded-r-md z-1"
+        >
+          <
+        </div>
+        <div
+          class="leftBtn absolute flex h-65 bg-gray-600/50 w-7 left-5 justify-center text-3xl items-center font-extrabold rounded-l-md z-10"
+        >
+          >
+        </div>
+
+        <div class="leftBtn flex flex-nowrap overflow-hidden rounded-md gap-1">
+          <article
+            class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
+          >
+            <img class="w-40 h-40 rounded-t-md" src="./images/3D.png" alt="" />
+            <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+              <div class="h-11 overflow-clip text-right">
+                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
+              </div>
+              <div
+                class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+              >
+                15%
+              </div>
+              <div class="text-[10px] inline-block text-gray-400 line-through">
+                100000
+              </div>
+
+              <div class="block text-lg w-full">85000</div>
+            </div>
+          </article>
+          <article
+            class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
+          >
+            <img class="w-40 h-40 rounded-t-md" src="./images/3D.png" alt="" />
+            <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+              <div class="h-11 overflow-clip text-right">
+                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
+              </div>
+              <div
+                class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+              >
+                15%
+              </div>
+              <div class="text-[10px] inline-block text-gray-400 line-through">
+                100000
+              </div>
+
+              <div class="block text-lg w-full">85000</div>
+            </div>
+          </article><article
+            class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
+          >
+            <img class="w-40 h-40 rounded-t-md" src="./images/3D.png" alt="" />
+            <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+              <div class="h-11 overflow-clip text-right">
+                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
+              </div>
+              <div
+                class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+              >
+                15%
+              </div>
+              <div class="text-[10px] inline-block text-gray-400 line-through">
+                100000
+              </div>
+
+              <div class="block text-lg w-full">85000</div>
+            </div>
+          </article><article
+            class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
+          >
+            <img class="w-40 h-40 rounded-t-md" src="./images/3D.png" alt="" />
+            <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+              <div class="h-11 overflow-clip text-right">
+                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
+              </div>
+              <div
+                class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+              >
+                15%
+              </div>
+              <div class="text-[10px] inline-block text-gray-400 line-through">
+                100000
+              </div>
+
+              <div class="block text-lg w-full">85000</div>
+            </div>
+          </article><article
+            class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
+          >
+            <img class="w-40 h-40 rounded-t-md" src="./images/3D.png" alt="" />
+            <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+              <div class="h-11 overflow-clip text-right">
+                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
+              </div>
+              <div
+                class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+              >
+                15%
+              </div>
+              <div class="text-[10px] inline-block text-gray-400 line-through">
+                100000
+              </div>
+
+              <div class="block text-lg w-full">85000</div>
+            </div>
+          </article><article
+            class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
+          >
+            <img class="w-40 h-40 rounded-t-md" src="./images/3D.png" alt="" />
+            <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+              <div class="h-11 overflow-clip text-right">
+                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
+              </div>
+              <div
+                class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+              >
+                15%
+              </div>
+              <div class="text-[10px] inline-block text-gray-400 line-through">
+                100000
+              </div>
+
+              <div class="block text-lg w-full">85000</div>
+            </div>
+          </article><article
+            class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
+          >
+            <img class="w-40 h-40 rounded-t-md" src="./images/3D.png" alt="" />
+            <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+              <div class="h-11 overflow-clip text-right">
+                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
+              </div>
+              <div
+                class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+              >
+                15%
+              </div>
+              <div class="text-[10px] inline-block text-gray-400 line-through">
+                100000
+              </div>
+
+              <div class="block text-lg w-full">85000</div>
+            </div>
+          </article><article
+            class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
+          >
+            <img class="w-40 h-40 rounded-t-md" src="./images/3D.png" alt="" />
+            <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+              <div class="h-11 overflow-clip text-right">
+                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
+              </div>
+              <div
+                class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+              >
+                15%
+              </div>
+              <div class="text-[10px] inline-block text-gray-400 line-through">
+                100000
+              </div>
+
+              <div class="block text-lg w-full">85000</div>
+            </div>
+          </article><article
+            class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
+          >
+            <img class="w-40 h-40 rounded-t-md" src="./images/3D.png" alt="" />
+            <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+              <div class="h-11 overflow-clip text-right">
+                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
+              </div>
+              <div
+                class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+              >
+                15%
+              </div>
+              <div class="text-[10px] inline-block text-gray-400 line-through">
+                100000
+              </div>
+
+              <div class="block text-lg w-full">85000</div>
+            </div>
+          </article><article
+            class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
+          >
+            <img class="w-40 h-40 rounded-t-md" src="./images/3D.png" alt="" />
+            <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+              <div class="h-11 overflow-clip text-right">
+                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
+              </div>
+              <div
+                class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+              >
+                15%
+              </div>
+              <div class="text-[10px] inline-block text-gray-400 line-through">
+                100000
+              </div>
+
+              <div class="block text-lg w-full">85000</div>
+            </div>
+          </article><article
+            class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
+          >
+            <img class="w-40 h-40 rounded-t-md" src="./images/3D.png" alt="" />
+            <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+              <div class="h-11 overflow-clip text-right">
+                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
+              </div>
+              <div
+                class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+              >
+                15%
+              </div>
+              <div class="text-[10px] inline-block text-gray-400 line-through">
+                100000
+              </div>
+
+              <div class="block text-lg w-full">85000</div>
+            </div>
+          </article><article
+            class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
+          >
+            <img class="w-40 h-40 rounded-t-md" src="./images/3D.png" alt="" />
+            <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+              <div class="h-11 overflow-clip text-right">
+                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
+              </div>
+              <div
+                class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+              >
+                15%
+              </div>
+              <div class="text-[10px] inline-block text-gray-400 line-through">
+                100000
+              </div>
+
+              <div class="block text-lg w-full">85000</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section class="">
-        <header class="font-serif font-bold text-4xl mr-2">محصولات پرفروش</header>
+        <header class="font-bold text-4xl m-2 my-6">محصولات پرفروش</header>
         <div class="flex gap-7">
           <article
             class="bg-white border border-gray-300 shadow-md flex rounded-md p-2 hover:shadow-xl duration-150 hover:scale-101"
           >
             <div class="p-3">
               <div class="block w-full">
-                <img
-                  src="./images/1a0a0c5500b2c36282e23400a168da2666e5f7e3_1757322183.webp"
-                  alt=""
-                />
+                <img src="./images/3D.png" alt="" />
               </div>
               <div class="block h-12 overflow-clip">
                 جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
               </div>
-              <div class="flex flex-wrap">
-                <div class="text-sm text-gray-400 italic line-through flex">
-                  100000
-                </div>
+              <div dir="ltr" class="flex flex-wrap m-1">
                 <div
                   class="border rounded-2xl px-0.5 bg-red-700 text-white text-sm flex"
                 >
                   15%
                 </div>
-                <div class="flex W w-full text-xl">85000</div>
+                <div class="text-sm text-gray-400 italic line-through flex">
+                  100000
+                </div>
+
+                <div class="flex w-full text-xl">85000</div>
               </div>
             </div>
           </article>
           <article
-            class="bg-white border border-gray-300 shadow-md flex rounded-md p-2"
+            class="bg-white border border-gray-300 shadow-md flex rounded-md p-2 hover:shadow-xl duration-150 hover:scale-101"
           >
-            <div>
+            <div class="p-3">
               <div class="block w-full">
-                <img
-                  src="./images/68d6b8bfd922fadbe8ae2e4b127c73aaa4bb3597_1763371092.webp"
-                  alt=""
-                />
+                <img src="./images/3D.png" alt="" />
               </div>
               <div class="block h-12 overflow-clip">
-                شارژر دیواری 45 وات سامسونگ مدل EP-T4511 Low Standby به همراه
-                کابل USB-C به طول 1.8 متر
+                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
               </div>
-              <div></div>
-            </div>
-            <div></div>
-          </article>
-          <article
-            class="bg-white border border-gray-300 shadow-md flex rounded-md p-2"
-          >
-            <div>
-              <div class="block w-full">
-                <img
-                  src="./images/8d2275d7eae4adb0fb919619f241d47e073d0a15_1762671465.webp"
-                  alt=""
-                />
+              <div dir="ltr" class="flex flex-wrap m-1">
+                <div
+                  class="border rounded-2xl px-0.5 bg-red-700 text-white text-sm flex"
+                >
+                  15%
+                </div>
+                <div class="text-sm text-gray-400 italic line-through flex">
+                  100000
+                </div>
+
+                <div class="flex w-full text-xl">85000</div>
               </div>
-              <div class="block h-12 overflow-clip">
-                اسپیکر قابل حمل مدل LX2500
-              </div>
-              <div></div>
-              <div></div>
             </div>
           </article>
           <article
-            class="bg-white border border-gray-300 shadow-md flex rounded-md p-2"
+            class="bg-white border border-gray-300 shadow-md flex rounded-md p-2 hover:shadow-xl duration-150 hover:scale-101"
           >
-            <div>
+            <div class="p-3">
               <div class="block w-full">
-                <img
-                  src="./images/cc84d9126782ce08ec110b4f2618456d97d08594_1782619784.webp"
-                  alt=""
-                />
+                <img src="./images/3D.png" alt="" />
               </div>
               <div class="block h-12 overflow-clip">
-                شال مبل و تخت کوکو جم مدل فلیپو پلاس سایز 190x150 سانتی‌متر
+                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
               </div>
-              <div></div>
-              <div></div>
+              <div dir="ltr" class="flex flex-wrap m-1">
+                <div
+                  class="border rounded-2xl px-0.5 bg-red-700 text-white text-sm flex"
+                >
+                  15%
+                </div>
+                <div class="text-sm text-gray-400 italic line-through flex">
+                  100000
+                </div>
+
+                <div class="flex w-full text-xl">85000</div>
+              </div>
+            </div>
+          </article>
+          <article
+            class="bg-white border border-gray-300 shadow-md flex rounded-md p-2 hover:shadow-xl duration-150 hover:scale-101"
+          >
+            <div class="p-3">
+              <div class="block w-full">
+                <img src="./images/3D.png" alt="" />
+              </div>
+              <div class="block h-12 overflow-clip">
+                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
+              </div>
+              <div dir="ltr" class="flex flex-wrap m-1">
+                <div
+                  class="border rounded-2xl px-0.5 bg-red-700 text-white text-sm flex"
+                >
+                  15%
+                </div>
+                <div class="text-sm text-gray-400 italic line-through flex">
+                  100000
+                </div>
+
+                <div class="flex w-full text-xl">85000</div>
+              </div>
             </div>
           </article>
         </div>
       </section>
     </main>
     <footer
+      dir="rtl"
       class="cart border-2 border-blue-500/5 shadow-sm p-6 rounded-md rounded-b-2xl my-2"
-    ></footer>
+    >
+      <div class="flex border-b-2 border-gray-800 p-0.5">
+        <div class="w-1/5 p-4 text-right">
+          <div class="inline-block">
+            <div class="">
+              <img
+                class="rounded-full w-10 h-8 float-left"
+                src="./images/Minimal Blue Shopping Cart Emblem.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="text-gray-400">جور کالا، محصولات جورواجور جوره!</div>
+        </div>
+        <div class="w-1/5 p-4 text-right mx-4">
+          <div class="text-gray-400"><a href="">ویژگی ها</a></div>
+          <div
+            class="text-gray-400"
+            class="text-gray-400"
+            class="text-gray-400"
+          >
+            <a href="#pricing">محصولات</a>
+          </div>
+          <div
+            class="text-gray-400"
+            class="text-gray-400"
+            class="text-gray-400"
+          >
+            راهنمای خرید
+          </div>
+          <div
+            class="text-gray-400"
+            class="text-gray-400"
+            class="text-gray-400"
+          >
+            گزارش تغییرات
+          </div>
+        </div>
+
+        <div class="w-1/5 p-4 text-right">
+          <div class="text-gray-400">درباره جورکالا</div>
+          <div class="text-gray-400" class="text-gray-400">درباره ما</div>
+          <div class="text-gray-400" class="text-gray-400">فرصت های شغلی</div>
+          <div class="text-gray-400" class="text-gray-400">وبلاگ</div>
+        </div>
+        <div dir="rtl" class="w-1/5 p-4 text-right mx-4">
+          <div class="text-gray-400">خدمات مشتریان</div>
+
+          <div class="text-gray-400">مرکز پشتیبانی</div>
+          <div class="text-gray-400">راهنمای ثبت سفارش</div>
+          <div class="text-gray-400" class="text-gray-400">قوانین و مقررات</div>
+        </div>
+        <div class="w-1/5 p-4 text-right">
+          <div class="text-gray-400 text-right">
+            برای اطلاع از اخبار و تخفیف ها عضو شوید.
+          </div>
+          <form
+            class="flex justify-around p-1 bg-white/5 rounded-lg mt-1 border-2 border-gray-800"
+            action=""
+          >
+            <input
+              class="flex flex-1 ml-0.5 focus:outline-blue-600 placeholder:text-sm w-[80%] placeholder:text-gray/50 p-2 m-0 rounded-lg focus:border-blue-900"
+              placeholder="عضویت در خبرنامه"
+              type="email"
+              name=""
+              id=""
+            />
+            <button
+              class="text-white bg-linear-to-r bg-blue-500 to-blue-700 m-0 p-2 rounded-md flex"
+              type="submit"
+            >
+              عضویت
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="text-gray-400 px-4 pb-4">
+        © ۱۴۰۵ جورکالا. تمامی حقوق محفوظ است. حریم خصوصی | قوانین و مقررات |
+        تنظیمات کوکی‌ها
+      </div>
+    </footer>
   </body>
 </html>
