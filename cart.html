@@ -1,13 +1,12 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fa" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cart</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
     <link href="./src/output.css" rel="stylesheet" />
-</head>
-<body class="p-4">
+  </head>
+  <body class="p-4 font-iranyekan">
     <header
       dir="ltr"
       class="cart mb-2 border-2 border-blue-500/5 shadow-sm p-4 rounded-t-2xl rounded-b-md flex flex-wrap justify-between"
@@ -19,9 +18,9 @@
           ></i>
         </div>
         <div
-          class="signIn border-2 hover:border-blue-950 flex bg-linear-to-r cursor-pointer from-blue-500 to-blue-600 p-2 rounded-md text-white font-mono font-bold"
+          class="signIn border-2 hover:border-blue-950 flex bg-linear-to-r cursor-pointer from-blue-500 to-blue-600 p-2 rounded-md text-white font-bold"
         >
-          <a href="./signup.html"> ثبت نام | ورود </a>
+          <a class="px-2" href="./signup.html"> ثبت نام | ورود </a>
         </div>
       </div>
       <div class="flex flex-wrap gap-5">
@@ -30,7 +29,7 @@
         >
           <input
             dir="rtl"
-            class="placeholder:mx-1 placeholder:font-serif placeholder:text-gray-300 flex flex-150 focus:outline-blue-600"
+            class="placeholder:mx-1 placeholder:text-gray-300 flex flex-150 focus:outline-blue-600"
             type="text"
             name=""
             id=""
@@ -45,7 +44,7 @@
         <a href="./index.html">
           <div class="logo flex cursor-pointer">
             <div
-              class="text-2xl font-bold fontmono bg-linear-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent m-1"
+              class="text-2xl font-bold bg-linear-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent m-1"
             >
               جورکالا
             </div>
@@ -58,8 +57,21 @@
       </div>
     </header>
     <main class="grid grid-cols-[3fr_1fr] gap-4">
-        <section class="w-full h-96 border-2 border-blue-500/5 shadow-sm "></section>
-        <section class="w-full h-96 border-2 border-blue-500/5 shadow-sm "><h2 class="flex justify-center text-3xl font-bold text-blue-600">جزئیات پرداخت</h2></section>
+      <section
+        class="w-full h-96 border-2 border-blue-500/5 shadow-sm"
+      ></section>
+      <section
+        class="w-full h-96 border-2 border-blue-500/5 shadow-sm p-2 flex flex-col"
+      >
+        <h2 class="flex justify-center text-3xl font-bold text-blue-600">
+          جزئیات پرداخت
+        </h2>
+        <div
+          class="w-full p-2 text-white bg-blue-600 rounded-lg flex mt-auto items-center justify-center font-bold"
+        >
+          ادامه فرایند خرید
+        </div>
+      </section>
     </main>
     <footer
       dir="rtl"
@@ -146,5 +158,5 @@
         تنظیمات کوکی‌ها
       </div>
     </footer>
-</body>
+  </body>
 </html>
