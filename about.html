@@ -22,7 +22,7 @@
           ></i>
         </div>
         <div
-          class="signIn border-2 hover:border-blue-950 flex bg-linear-to-r cursor-pointer from-blue-500 to-blue-600 p-2 rounded-md text-white font-bold"
+          class="signIn border-2 hover:border-blue-950 flex bg-linear-to-r cursor-pointer from-blue-500 to-blue-600 p-2 rounded-md text-white"
         >
           <a class="px-2" href="./signup.html"> ثبت نام | ورود </a>
         </div>
@@ -45,53 +45,61 @@
             <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
           </div>
         </div>
-        <a href="./index.html">
-          <div class="logo flex cursor-pointer">
-            <div
-              class="text-2xl font-bold bg-linear-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent m-1"
-            >
-              جورکالا
-            </div>
-            <img
-              class="w-10 h-8 rounded-md mt-2"
-              src="/Online-Store-Project/images/Minimal Blue Shopping Cart Emblem.png"
-              alt=""
-            /></div
-        ></a>
+
+        <div class="logo flex cursor-pointer">
+          <div
+            class="text-2xl bg-linear-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent m-1"
+          >
+            جورکالا
+          </div>
+          <img
+            class="w-10 h-8 rounded-md mt-2"
+            src="/Online-Store-Project/images/Minimal Blue Shopping Cart Emblem.png"
+            alt=""
+          />
+        </div>
       </div>
     </header>
     <main class="relative w-full">
       <section>
-        <img
-          class="rounded-md w-full"
-          src="./images/Modern Persian Ecommerce Shopping Banner.png"
-          alt=""
-        />
-        <a href="./products.html"
-          ><div
-            class="prodBtn h-[7%] w-[20.5%] absolute hover:border-3 border-blue-950 z-10 bg-linear-to-r from-blue-500 to-blue-700 text-4xl font-bold text-white px-2 pb-2 left-[23%] top-[33%] rounded-full flex items-center justify-center"
+        <div class="relative">
+          <img
+            class="rounded-md w-full h-full"
+            src="./images/Modern Persian Ecommerce Shopping Banner.png"
+            alt=""
+          />
+          <a href="./products.html"
+            ><div
+              class="prodBtn h-[7%] w-[20.5%] absolute border-3 border-transparent hover:border-3 hover:border-blue-950 z-10 bg-linear-to-r from-blue-500 to-blue-700 text-3xl font-bold text-white px-3 py-6.5 left-[23%] bottom-[3%] rounded-full flex items-center justify-center"
+            >
+              مشاهده محصولات
+            </div></a
           >
-            مشاهده محصولات
-          </div></a
-        >
+        </div>
       </section>
-      <section class="flex mt-8">
+      <section class="mt-8 grid grid-cols-[2fr_1fr]">
         <div class="flex-1">
-          <h2 class="text-5xl">داستان <span class="text-5xl font-bold bg-linear-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent">جورکالا</span></h2>
-          <h3 class="text-2xl text-gray-600 text-justify leading-8 mt-5">
+          <h2 class="text-5xl mr-2">
+            داستان
+            <span
+              class="text-5xl font-bold bg-linear-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent"
+              >جورکالا</span
+            >
+          </h2>
+          <h3 class="text-2xl mr-10 text-gray-600 text-justify leading-9 mt-5">
             جورکالا با هدف ساده‌تر کردن تجربه خرید اینترنتی شکل گرفته است. ما
             باور داریم که خرید کردن باید تجربه‌ای راحت، سریع و لذت‌بخش باشد؛ به
             همین دلیل تلاش کرده‌ایم مجموعه‌ای متنوع از محصولات را در
             دسته‌بندی‌های مختلف گرد هم بیاوریم تا بتوانید بدون دردسر، محصول
             موردنظر خود را پیدا کنید. در جورکالا، هدف ما فقط فروش محصولات نیست؛
             بلکه می‌خواهیم با فراهم کردن امکان انتخاب آسان، ارائه محصولات
-            باکیفیت و ایجاد تجربه‌ای مطمئن،
-            دنیایی از انتخاب‌های جورواجور، برای خریدی آسان و مطمئن!
+            باکیفیت و ایجاد تجربه‌ای مطمئن، دنیایی از انتخاب‌های جورواجور، برای
+            خریدی آسان و مطمئن!
           </h3>
         </div>
         <div class="flex flex-1 justify-end">
           <img
-            class="w-3/5"
+            class=""
             src="./images/Shipping Boxes with Blue Location Pin.png"
             alt=""
           />
@@ -127,6 +135,38 @@
           <h3 class="text-zinc-600">
             دسترسی به محصولات متنوع در دسته بندی های مختلف
           </h3>
+        </div>
+      </section>
+      <section
+        class="grid grid-cols-[1fr_4fr] gap-2 bg-linear-to-r from-blue-400 to-blue-400/70 p-8 rounded-md my-6"
+      >
+        <div class="">
+          <div class="text-3xl">
+            آمار
+            <span
+              class="text-3xl font-bold bg-linear-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent m-1"
+              >جورکالا</span
+            >
+          </div>
+          <div class="text-md">یک فروشگاه رو به رشد با هدف رضایت شما</div>
+        </div>
+        <div class="flex gap-2 text-center">
+          <div class="flex-1">
+            <div class="text-3xl text-blue-700 font-bold">100%</div>
+            <div>تلاش برای رضایت مشتری</div>
+          </div>
+          <div class="flex-1 border-r-3 border-blue-900">
+            <div class="text-3xl text-blue-700 font-bold">24/7</div>
+            <div>دسترسی به فروشگاه</div>
+          </div>
+          <div class="flex-1 border-r-3 border-blue-900">
+            <div class="text-3xl text-blue-700 font-bold">+10</div>
+            <div>دسته‌بندی محصول</div>
+          </div>
+          <div class="flex-1 border-r-3 border-blue-900">
+            <div class="text-3xl text-blue-700 font-bold">+500</div>
+            <div>محصول متنوع</div>
+          </div>
         </div>
       </section>
     </main>

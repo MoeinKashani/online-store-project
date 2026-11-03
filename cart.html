@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cart</title>
     <link href="./src/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
   </head>
   <body class="p-4 font-iranyekan">
     <header
@@ -18,7 +22,7 @@
           ></i>
         </div>
         <div
-          class="signIn border-2 hover:border-blue-950 flex bg-linear-to-r cursor-pointer from-blue-500 to-blue-600 p-2 rounded-md text-white font-bold"
+          class="signIn border-2 hover:border-blue-950 flex bg-linear-to-r cursor-pointer from-blue-500 to-blue-600 p-2 rounded-md text-white"
         >
           <a class="px-2" href="./signup.html"> ثبت نام | ورود </a>
         </div>
@@ -41,19 +45,19 @@
             <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
           </div>
         </div>
-        <a href="./index.html">
-          <div class="logo flex cursor-pointer">
-            <div
-              class="text-2xl font-bold bg-linear-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent m-1"
-            >
-              جورکالا
-            </div>
-            <img
-              class="w-10 h-8 rounded-md mt-2"
-              src="/Online-Store-Project/images/Minimal Blue Shopping Cart Emblem.png"
-              alt=""
-            /></div
-        ></a>
+
+        <div class="logo flex cursor-pointer">
+          <div
+            class="text-2xl bg-linear-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent m-1"
+          >
+            جورکالا
+          </div>
+          <img
+            class="w-10 h-8 rounded-md mt-2"
+            src="/Online-Store-Project/images/Minimal Blue Shopping Cart Emblem.png"
+            alt=""
+          />
+        </div>
       </div>
     </header>
     <main class="grid grid-cols-[3fr_1fr] gap-4">
@@ -75,7 +79,7 @@
     </main>
     <footer
       dir="rtl"
-      class="cart border-2 border-blue-500/5 shadow-sm p-6 rounded-md rounded-b-2xl my-2 mt-5"
+      class="border-2 border-blue-500/5 shadow-sm p-6 rounded-md rounded-b-2xl my-3 mt-52 block"
     >
       <div class="flex border-b-2 border-gray-800 p-0.5">
         <div class="w-1/5 p-4 text-right">
