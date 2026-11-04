@@ -10,23 +10,38 @@
       href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
     />
   </head>
-  <body class="p-4 bg-white relative font-iranyekan ">
+  <body class="p-4 bg-white relative font-iranyekan">
     <header
       dir="ltr"
       class="cart mb-2 border-2 border-blue-500/5 shadow-sm p-4 rounded-t-2xl rounded-b-md flex flex-wrap justify-between"
     >
-      <div class="flex flex-wrap gap-2">
+      <div class="flex flex-wrap gap-3">
         <div class="cart flex">
-          <i
-            class="fa-solid fa-cart-shopping cursor-pointer text-blue-600 text-2xl p-2"
-          ></i>
+          <a href="../cart.html"
+            ><i class="fa-solid fa-cart-shopping text-blue-600 text-2xl p-2"></i
+          ></a>
         </div>
         <div
-          class="signIn border-2 hover:border-blue-950 flex bg-linear-to-r cursor-pointer from-blue-500 to-blue-600 p-2 rounded-md text-white"
+          class="signIn border-2 hover:border-blue-950 flex bg-linear-to-r cursor-pointer from-blue-500 to-blue-600 p-2 px-4 rounded-md text-white font-bold"
         >
-          <a class="px-2" href="./signup.html"> ثبت نام | ورود </a>
+          <a href="../signup.html"> ثبت نام | ورود </a>
         </div>
+        <a href="./profile.html">
+          <div
+            class="flex rounded-md p-0.5 bg-blue-200 hover:bg-blue-100 duration-500 hover:text-blue-900"
+          >
+            <div class="text-lg text-blue-600 p-1.5 px-2 font-bold">
+              <i
+                class="fa-regular fa-user border-blue-300 flex p-1 scale-x-107 hover:text-blue-700 duration-500"
+              ></i>
+            </div>
+            <div class="flex items-center text-lg font-bold text-blue-600">
+              حساب کاربری
+            </div>
+          </div>
+          </a>
       </div>
+
       <div class="flex flex-wrap gap-5">
         <div
           class="searchBar flex flex-wrap border-2 border-blue-500/5 shadow-sm rounded-md w-96 h-10"
@@ -48,7 +63,7 @@
 
         <div class="logo flex cursor-pointer">
           <div
-            class="text-2xl bg-linear-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent m-1"
+            class="text-2xl bg-linear-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent m-1 font-bold"
           >
             جورکالا
           </div>
@@ -60,44 +75,46 @@
         </div>
       </div>
     </header>
-    <nav
-      dir="rtl"
-      class="cart my-2 rounded-md flex flex-wrap justify-start gap-2"
-    >
-      <div class="text-blue-600 text-xl p-0.5 font-extrabold">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <div
-        class="flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
+    <section class="grid grid-cols-[19fr_1fr] text-left ml-3">
+      <nav
+        dir="rtl"
+        class="cart my-2 rounded-md flex flex-wrap justify-start gap-2"
       >
-        کالای دیجیتال
-      </div>
-      <div
-        class="flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
-      >
-        خانه و آشپزخانه
-      </div>
-      <div
-        class="flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
-      >
-        مد و پوشاک
-      </div>
-      <div
-        class="flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
-      >
-        طلا و نقره
-      </div>
-      <div
-        class="flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
-      >
-        سوپرمارکت
-      </div>
-      <div
-        class="flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
-      >
-        خودرو و موتورسیکلت
-      </div>
-    </nav>
+        <div class="text-blue-600 text-xl p-0.5 font-extrabold">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div
+          class="flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
+        >
+          کالای دیجیتال
+        </div>
+        <div
+          class="flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
+        >
+          خانه و آشپزخانه
+        </div>
+        <div
+          class="flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
+        >
+          مد و پوشاک
+        </div>
+        <div
+          class="flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
+        >
+          طلا و نقره
+        </div>
+        <div
+          class="flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
+        >
+          سوپرمارکت
+        </div>
+        <div
+          class="flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
+        >
+          خودرو و موتورسیکلت
+        </div>
+      </nav>
+    </section>
     <section class="relative">
       <img
         src="./images/Modern Online Shopping Electronics Banner.png"
@@ -136,242 +153,394 @@
           <article
             class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
           >
-            <a href="#"><img class="w-40 h-40 rounded-t-md" src="./images/3D.png" alt="" />
-            <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
-              <div class="h-11 overflow-clip text-right">
-                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
-              </div>
-              <div
-                class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
-              >
-                15%
-              </div>
-              <div class="text-[10px] inline-block text-gray-400 line-through">
-                100000
-              </div>
+            <a href="./KalaPages/jurabPage.html"
+              ><img
+                class="w-40 h-40 rounded-t-md"
+                src="./images/ـJurab-photo.png"
+                alt=""
+              />
+              <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+                <div class="h-11 overflow-clip text-right">
+                  جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
+                </div>
+                <div
+                  class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+                >
+                  15%
+                </div>
+                <div
+                  class="text-[10px] inline-block text-gray-400 line-through"
+                >
+                  100000
+                </div>
 
-              <div class="block text-lg w-full">85000</div>
-            </div></a>
+                <div class="block text-lg w-full">85000</div>
+              </div></a
+            >
           </article>
           <article
             class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
           >
-            <img class="w-40 h-40 rounded-t-md" src="./images/3D.png" alt="" />
-            <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
-              <div class="h-11 overflow-clip text-right">
-                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
-              </div>
-              <div
-                class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
-              >
-                15%
-              </div>
-              <div class="text-[10px] inline-block text-gray-400 line-through">
-                100000
-              </div>
+            <a href="./KalaPages/jurabPage.html"
+              ><img
+                class="w-40 h-40 rounded-t-md"
+                src="./images/Headphone-photo.png"
+                alt=""
+              />
+              <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+                <div class="h-11 overflow-clip text-right">
+                  هدفون بلوتوثی انکر مدل Soundcore R50i
+                </div>
+                <div
+                  class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+                >
+                  20%
+                </div>
+                <div
+                  class="text-[10px] inline-block text-gray-400 line-through"
+                >
+                  1,500,000
+                </div>
 
-              <div class="block text-lg w-full">85000</div>
-            </div>
+                <div class="block text-lg w-full">1,200,000</div>
+              </div></a
+            >
           </article>
           <article
             class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
           >
-            <img class="w-40 h-40 rounded-t-md" src="./images/3D.png" alt="" />
-            <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
-              <div class="h-11 overflow-clip text-right">
-                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
-              </div>
-              <div
-                class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
-              >
-                15%
-              </div>
-              <div class="text-[10px] inline-block text-gray-400 line-through">
-                100000
-              </div>
+            <a href="./KalaPages/jurabPage.html"
+              ><img
+                class="w-40 h-40 rounded-t-md"
+                src="./images/ـJurab-photo.png"
+                alt=""
+              />
+              <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+                <div class="h-11 overflow-clip text-right">
+                  جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
+                </div>
+                <div
+                  class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+                >
+                  15%
+                </div>
+                <div
+                  class="text-[10px] inline-block text-gray-400 line-through"
+                >
+                  100000
+                </div>
 
-              <div class="block text-lg w-full">85000</div>
-            </div>
+                <div class="block text-lg w-full">85000</div>
+              </div></a
+            >
           </article>
           <article
             class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
           >
-            <img class="w-40 h-40 rounded-t-md" src="./images/3D.png" alt="" />
-            <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
-              <div class="h-11 overflow-clip text-right">
-                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
-              </div>
-              <div
-                class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
-              >
-                15%
-              </div>
-              <div class="text-[10px] inline-block text-gray-400 line-through">
-                100000
-              </div>
+            <a href="./KalaPages/jurabPage.html"
+              ><img
+                class="w-40 h-40 rounded-t-md"
+                src="./images/Headphone-photo.png"
+                alt=""
+              />
+              <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+                <div class="h-11 overflow-clip text-right">
+                  هدفون بلوتوثی انکر مدل Soundcore R50i
+                </div>
+                <div
+                  class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+                >
+                  20%
+                </div>
+                <div
+                  class="text-[10px] inline-block text-gray-400 line-through"
+                >
+                  1,500,000
+                </div>
 
-              <div class="block text-lg w-full">85000</div>
-            </div>
+                <div class="block text-lg w-full">1,200,000</div>
+              </div></a
+            >
           </article>
           <article
             class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
           >
-            <img class="w-40 h-40 rounded-t-md" src="./images/3D.png" alt="" />
-            <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
-              <div class="h-11 overflow-clip text-right">
-                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
-              </div>
-              <div
-                class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
-              >
-                15%
-              </div>
-              <div class="text-[10px] inline-block text-gray-400 line-through">
-                100000
-              </div>
+            <a href="./KalaPages/jurabPage.html"
+              ><img
+                class="w-40 h-40 rounded-t-md"
+                src="./images/ـJurab-photo.png"
+                alt=""
+              />
+              <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+                <div class="h-11 overflow-clip text-right">
+                  جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
+                </div>
+                <div
+                  class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+                >
+                  15%
+                </div>
+                <div
+                  class="text-[10px] inline-block text-gray-400 line-through"
+                >
+                  100000
+                </div>
 
-              <div class="block text-lg w-full">85000</div>
-            </div>
+                <div class="block text-lg w-full">85000</div>
+              </div></a
+            >
           </article>
           <article
             class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
           >
-            <img class="w-40 h-40 rounded-t-md" src="./images/3D.png" alt="" />
-            <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
-              <div class="h-11 overflow-clip text-right">
-                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
-              </div>
-              <div
-                class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
-              >
-                15%
-              </div>
-              <div class="text-[10px] inline-block text-gray-400 line-through">
-                100000
-              </div>
+            <a href="./KalaPages/jurabPage.html"
+              ><img
+                class="w-40 h-40 rounded-t-md"
+                src="./images/Headphone-photo.png"
+                alt=""
+              />
+              <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+                <div class="h-11 overflow-clip text-right">
+                  هدفون بلوتوثی انکر مدل Soundcore R50i
+                </div>
+                <div
+                  class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+                >
+                  20%
+                </div>
+                <div
+                  class="text-[10px] inline-block text-gray-400 line-through"
+                >
+                  1,500,000
+                </div>
 
-              <div class="block text-lg w-full">85000</div>
-            </div>
+                <div class="block text-lg w-full">1,200,000</div>
+              </div></a
+            >
           </article>
           <article
             class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
           >
-            <img class="w-40 h-40 rounded-t-md" src="./images/3D.png" alt="" />
-            <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
-              <div class="h-11 overflow-clip text-right">
-                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
-              </div>
-              <div
-                class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
-              >
-                15%
-              </div>
-              <div class="text-[10px] inline-block text-gray-400 line-through">
-                100000
-              </div>
+            <a href="./KalaPages/jurabPage.html"
+              ><img
+                class="w-40 h-40 rounded-t-md"
+                src="./images/ـJurab-photo.png"
+                alt=""
+              />
+              <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+                <div class="h-11 overflow-clip text-right">
+                  جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
+                </div>
+                <div
+                  class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+                >
+                  15%
+                </div>
+                <div
+                  class="text-[10px] inline-block text-gray-400 line-through"
+                >
+                  100000
+                </div>
 
-              <div class="block text-lg w-full">85000</div>
-            </div>
+                <div class="block text-lg w-full">85000</div>
+              </div></a
+            >
           </article>
           <article
             class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
           >
-            <img class="w-40 h-40 rounded-t-md" src="./images/3D.png" alt="" />
-            <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
-              <div class="h-11 overflow-clip text-right">
-                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
-              </div>
-              <div
-                class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
-              >
-                15%
-              </div>
-              <div class="text-[10px] inline-block text-gray-400 line-through">
-                100000
-              </div>
+            <a href="./KalaPages/jurabPage.html"
+              ><img
+                class="w-40 h-40 rounded-t-md"
+                src="./images/Headphone-photo.png"
+                alt=""
+              />
+              <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+                <div class="h-11 overflow-clip text-right">
+                  هدفون بلوتوثی انکر مدل Soundcore R50i
+                </div>
+                <div
+                  class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+                >
+                  20%
+                </div>
+                <div
+                  class="text-[10px] inline-block text-gray-400 line-through"
+                >
+                  1,500,000
+                </div>
 
-              <div class="block text-lg w-full">85000</div>
-            </div>
+                <div class="block text-lg w-full">1,200,000</div>
+              </div></a
+            >
           </article>
           <article
             class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
           >
-            <img class="w-40 h-40 rounded-t-md" src="./images/3D.png" alt="" />
-            <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
-              <div class="h-11 overflow-clip text-right">
-                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
-              </div>
-              <div
-                class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
-              >
-                15%
-              </div>
-              <div class="text-[10px] inline-block text-gray-400 line-through">
-                100000
-              </div>
+            <a href="./KalaPages/jurabPage.html"
+              ><img
+                class="w-40 h-40 rounded-t-md"
+                src="./images/ـJurab-photo.png"
+                alt=""
+              />
+              <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+                <div class="h-11 overflow-clip text-right">
+                  جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
+                </div>
+                <div
+                  class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+                >
+                  15%
+                </div>
+                <div
+                  class="text-[10px] inline-block text-gray-400 line-through"
+                >
+                  100000
+                </div>
 
-              <div class="block text-lg w-full">85000</div>
-            </div>
+                <div class="block text-lg w-full">85000</div>
+              </div></a
+            >
           </article>
           <article
             class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
           >
-            <img class="w-40 h-40 rounded-t-md" src="./images/3D.png" alt="" />
-            <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
-              <div class="h-11 overflow-clip text-right">
-                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
-              </div>
-              <div
-                class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
-              >
-                15%
-              </div>
-              <div class="text-[10px] inline-block text-gray-400 line-through">
-                100000
-              </div>
+            <a href="./KalaPages/jurabPage.html"
+              ><img
+                class="w-40 h-40 rounded-t-md"
+                src="./images/Headphone-photo.png"
+                alt=""
+              />
+              <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+                <div class="h-11 overflow-clip text-right">
+                  هدفون بلوتوثی انکر مدل Soundcore R50i
+                </div>
+                <div
+                  class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+                >
+                  20%
+                </div>
+                <div
+                  class="text-[10px] inline-block text-gray-400 line-through"
+                >
+                  1,500,000
+                </div>
 
-              <div class="block text-lg w-full">85000</div>
-            </div>
+                <div class="block text-lg w-full">1,200,000</div>
+              </div></a
+            >
           </article>
           <article
             class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
           >
-            <img class="w-40 h-40 rounded-t-md" src="./images/3D.png" alt="" />
-            <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
-              <div class="h-11 overflow-clip text-right">
-                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
-              </div>
-              <div
-                class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
-              >
-                15%
-              </div>
-              <div class="text-[10px] inline-block text-gray-400 line-through">
-                100000
-              </div>
+            <a href="./KalaPages/jurabPage.html"
+              ><img
+                class="w-40 h-40 rounded-t-md"
+                src="./images/ـJurab-photo.png"
+                alt=""
+              />
+              <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+                <div class="h-11 overflow-clip text-right">
+                  جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
+                </div>
+                <div
+                  class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+                >
+                  15%
+                </div>
+                <div
+                  class="text-[10px] inline-block text-gray-400 line-through"
+                >
+                  100000
+                </div>
 
-              <div class="block text-lg w-full">85000</div>
-            </div>
+                <div class="block text-lg w-full">85000</div>
+              </div></a
+            >
           </article>
           <article
             class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
           >
-            <img class="w-40 h-40 rounded-t-md" src="./images/3D.png" alt="" />
-            <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
-              <div class="h-11 overflow-clip text-right">
-                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
-              </div>
-              <div
-                class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
-              >
-                15%
-              </div>
-              <div class="text-[10px] inline-block text-gray-400 line-through">
-                100000
-              </div>
+            <a href="./KalaPages/jurabPage.html"
+              ><img
+                class="w-40 h-40 rounded-t-md"
+                src="./images/Headphone-photo.png"
+                alt=""
+              />
+              <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+                <div class="h-11 overflow-clip text-right">
+                  هدفون بلوتوثی انکر مدل Soundcore R50i
+                </div>
+                <div
+                  class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+                >
+                  20%
+                </div>
+                <div
+                  class="text-[10px] inline-block text-gray-400 line-through"
+                >
+                  1,500,000
+                </div>
 
-              <div class="block text-lg w-full">85000</div>
-            </div>
+                <div class="block text-lg w-full">1,200,000</div>
+              </div></a
+            >
+          </article>
+          <article
+            class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
+          >
+            <a href="./KalaPages/jurabPage.html"
+              ><img
+                class="w-40 h-40 rounded-t-md"
+                src="./images/ـJurab-photo.png"
+                alt=""
+              />
+              <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+                <div class="h-11 overflow-clip text-right">
+                  جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
+                </div>
+                <div
+                  class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+                >
+                  15%
+                </div>
+                <div
+                  class="text-[10px] inline-block text-gray-400 line-through"
+                >
+                  100000
+                </div>
+
+                <div class="block text-lg w-full">85000</div>
+              </div></a
+            >
+          </article>
+          <article
+            class="w-40 h-65 relative flex shrink-0 rounded-md bg-white p-1"
+          >
+            <a href="./KalaPages/jurabPage.html"
+              ><img
+                class="w-40 h-40 rounded-t-md"
+                src="./images/Headphone-photo.png"
+                alt=""
+              />
+              <div dir="ltr" class="absolute bottom-0 right-1 left-1 leading-5">
+                <div class="h-11 overflow-clip text-right">
+                  هدفون بلوتوثی انکر مدل Soundcore R50i
+                </div>
+                <div
+                  class="border inline-block rounded-2xl px-0.5 bg-red-700 text-white text-sm"
+                >
+                  20%
+                </div>
+                <div
+                  class="text-[10px] inline-block text-gray-400 line-through"
+                >
+                  1,500,000
+                </div>
+
+                <div class="block text-lg w-full">1,200,000</div>
+              </div></a
+            >
           </article>
         </div>
       </section>
@@ -379,102 +548,136 @@
       <section class="">
         <header class="text-4xl m-2 my-8">محصولات پرفروش</header>
         <div class="flex gap-4">
-          <article
-            class="bg-white border border-gray-300 shadow-md flex rounded-md p-2 hover:shadow-xl duration-150 hover:scale-101"
-          >
-            <div class="p-3">
-              <div class="block w-full">
-                <img src="./images/3D.png" alt="" />
-              </div>
-              <div class="block h-12 overflow-clip">
-                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
-              </div>
-              <div dir="ltr" class="flex flex-wrap m-1">
-                <div
-                  class="border rounded-2xl px-0.5 bg-red-700 text-white text-sm flex"
-                >
-                  15%
+          <a href="./KalaPages/jurabPage.html"
+            ><article
+              class="bg-white border border-gray-300 shadow-md flex rounded-md p-2 hover:shadow-xl duration-150 hover:scale-101"
+            >
+              <div class="p-3">
+                <div class="block w-full">
+                  <img src="./images/ـJurab-photo.png" alt="" />
                 </div>
-                <div class="text-sm text-gray-400 italic line-through flex">
-                  100000
+                <div class="block h-12 overflow-clip">
+                  جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
                 </div>
+                <div dir="ltr" class="flex flex-wrap m-1">
+                  <div
+                    class="border rounded-2xl px-0.5 bg-red-700 text-white text-sm flex"
+                  >
+                    15%
+                  </div>
+                  <div class="text-sm text-gray-400 italic line-through flex">
+                    100,000
+                  </div>
 
-                <div class="flex w-full text-xl">85000</div>
+                  <div class="flex w-full text-xl">85,000</div>
+                </div>
               </div>
-            </div>
-          </article>
-          <article
-            class="bg-white border border-gray-300 shadow-md flex rounded-md p-2 hover:shadow-xl duration-150 hover:scale-101"
+            </article></a
           >
-            <div class="p-3">
-              <div class="block w-full">
-                <img src="./images/3D.png" alt="" />
-              </div>
-              <div class="block h-12 overflow-clip">
-                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
-              </div>
-              <div dir="ltr" class="flex flex-wrap m-1">
-                <div
-                  class="border rounded-2xl px-0.5 bg-red-700 text-white text-sm flex"
-                >
-                  15%
+          <a href="./KalaPages/headphone.html"
+            ><article
+              class="bg-white border border-gray-300 shadow-md flex rounded-md p-2 hover:shadow-xl duration-150 hover:scale-101"
+            >
+              <div class="p-3">
+                <div class="block w-full">
+                  <img src="./images/Headphone-photo.png" alt="" />
                 </div>
-                <div class="text-sm text-gray-400 italic line-through flex">
-                  100000
+                <div class="block h-12 overflow-clip">
+                  هدفون بلوتوثی انکر مدل Soundcore R50i
                 </div>
+                <div dir="ltr" class="flex flex-wrap m-1">
+                  <div
+                    class="border rounded-2xl px-0.5 bg-red-700 text-white text-sm flex"
+                  >
+                    20%
+                  </div>
+                  <div class="text-sm text-gray-400 italic line-through flex">
+                    1,500,000
+                  </div>
 
-                <div class="flex w-full text-xl">85000</div>
+                  <div class="flex w-full text-xl">1,200,000</div>
+                </div>
               </div>
-            </div>
-          </article>
-          <article
-            class="bg-white border border-gray-300 shadow-md flex rounded-md p-2 hover:shadow-xl duration-150 hover:scale-101"
+            </article></a
           >
-            <div class="p-3">
-              <div class="block w-full">
-                <img src="./images/3D.png" alt="" />
-              </div>
-              <div class="block h-12 overflow-clip">
-                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
-              </div>
-              <div dir="ltr" class="flex flex-wrap m-1">
-                <div
-                  class="border rounded-2xl px-0.5 bg-red-700 text-white text-sm flex"
-                >
-                  15%
+          <a href="./KalaPages/jurabPage.html"
+            ><article
+              class="bg-white border border-gray-300 shadow-md flex rounded-md p-2 hover:shadow-xl duration-150 hover:scale-101"
+            >
+              <div class="p-3">
+                <div class="block w-full">
+                  <img src="./images/ـJurab-photo.png" alt="" />
                 </div>
-                <div class="text-sm text-gray-400 italic line-through flex">
-                  100000
+                <div class="block h-12 overflow-clip">
+                  جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
                 </div>
+                <div dir="ltr" class="flex flex-wrap m-1">
+                  <div
+                    class="border rounded-2xl px-0.5 bg-red-700 text-white text-sm flex"
+                  >
+                    15%
+                  </div>
+                  <div class="text-sm text-gray-400 italic line-through flex">
+                    100,000
+                  </div>
 
-                <div class="flex w-full text-xl">85000</div>
+                  <div class="flex w-full text-xl">85,000</div>
+                </div>
               </div>
-            </div>
-          </article>
-          <article
-            class="bg-white border border-gray-300 shadow-md flex rounded-md p-2 hover:shadow-xl duration-150 hover:scale-101"
+            </article></a
           >
-            <div class="p-3">
-              <div class="block w-full">
-                <img src="./images/3D.png" alt="" />
-              </div>
-              <div class="block h-12 overflow-clip">
-                جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
-              </div>
-              <div dir="ltr" class="flex flex-wrap m-1">
-                <div
-                  class="border rounded-2xl px-0.5 bg-red-700 text-white text-sm flex"
-                >
-                  15%
+          <a href="./KalaPages/headphone.html"
+            ><article
+              class="bg-white border border-gray-300 shadow-md flex rounded-md p-2 hover:shadow-xl duration-150 hover:scale-101"
+            >
+              <div class="p-3">
+                <div class="block w-full">
+                  <img src="./images/Headphone-photo.png" alt="" />
                 </div>
-                <div class="text-sm text-gray-400 italic line-through flex">
-                  100000
+                <div class="block h-12 overflow-clip">
+                  هدفون بلوتوثی انکر مدل Soundcore R50i
                 </div>
+                <div dir="ltr" class="flex flex-wrap m-1">
+                  <div
+                    class="border rounded-2xl px-0.5 bg-red-700 text-white text-sm flex"
+                  >
+                    20%
+                  </div>
+                  <div class="text-sm text-gray-400 italic line-through flex">
+                    1,500,000
+                  </div>
 
-                <div class="flex w-full text-xl">85000</div>
+                  <div class="flex w-full text-xl">1,200,000</div>
+                </div>
               </div>
-            </div>
-          </article>
+            </article></a
+          >
+          <a href="./KalaPages/jurabPage.html"
+            ><article
+              class="bg-white border border-gray-300 shadow-md flex rounded-md p-2 hover:shadow-xl duration-150 hover:scale-101"
+            >
+              <div class="p-3">
+                <div class="block w-full">
+                  <img src="./images/ـJurab-photo.png" alt="" />
+                </div>
+                <div class="block h-12 overflow-clip">
+                  جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
+                </div>
+                <div dir="ltr" class="flex flex-wrap m-1">
+                  <div
+                    class="border rounded-2xl px-0.5 bg-red-700 text-white text-sm flex"
+                  >
+                    15%
+                  </div>
+                  <div class="text-sm text-gray-400 italic line-through flex">
+                    100,000
+                  </div>
+
+                  <div class="flex w-full text-xl">85,000</div>
+                </div>
+              </div>
+            </article></a
+          >
         </div>
       </section>
     </main>

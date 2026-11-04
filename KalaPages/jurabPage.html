@@ -10,21 +10,21 @@
       href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
     />
   </head>
-  <body class="font-iranyekan">
+  <body class="font-iranyekan p-4">
     <header
       dir="ltr"
       class="border-2 border-blue-500/5 shadow-sm p-4 rounded-t-2xl rounded-b-md flex flex-wrap justify-between"
     >
       <div class="flex flex-wrap gap-3">
         <div class="cart flex">
-          <a href="./cart.html"
+          <a href="../cart.html"
             ><i class="fa-solid fa-cart-shopping text-blue-600 text-2xl p-2"></i
           ></a>
         </div>
         <div
-          class="signIn border-2 hover:border-blue-950 flex bg-linear-to-r cursor-pointer from-blue-500 to-blue-600 p-2 rounded-md text-white font-bold"
+          class="signIn border-2 hover:border-blue-950 flex bg-linear-to-r cursor-pointer from-blue-500 to-blue-600 p-2 px-4 rounded-md text-white font-bold"
         >
-          <a href="./signup.html"> ثبت نام | ورود </a>
+          <a href="../signup.html"> ثبت نام | ورود </a>
         </div>
       </div>
       <div class="flex flex-wrap gap-5">
@@ -45,7 +45,7 @@
             <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
           </div>
         </div>
-        <a href="./index.html">
+        <a href="../index.html">
           <div class="logo flex cursor-pointer">
             <div
               class="text-2xl font-bold fontmono bg-linear-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent m-1"
@@ -65,8 +65,10 @@
       ><a class="hover:text-blue-600 duration-100" href="">محصولات></a
       ><a class="hover:text-blue-600 duration-100" href="">جوراب مردانه</a>
     </section>
-    <main class="mx-50 m-4 border border-gray-300 rounded-md shadow-md p-2">
-      <section class="grid grid-cols-2 gap-2">
+    <main
+      class="mx-[10%] m-4 border grid gap-3 border-gray-300 rounded-md shadow-md p-2"
+    >
+      <section class="grid grid-cols-2 gap-3">
         <article
           class="grid grid-cols-[1fr_4fr] gap-2 border border-gray-300 rounded-md shadow-md p-2"
         >
@@ -77,22 +79,29 @@
             <div class=" "><img src="../images/3D.png" alt="" /></div>
           </div>
           <div class="flex">
-            <img class="w-full h-full" src="../images/3D.png" alt="" />
+            <img class="w-full h-full" src="../images/ـJurab-photo.png" alt="" />
           </div>
         </article>
-        <article class="border border-gray-300 rounded-md shadow-md p-2">
+        <article class="border border-gray-300 rounded-md shadow-md p-7">
           <div>
-            <h1 class="text-3xl w-3/4 border-b border-b-gray-300 pb-3">
+            <h1 class="text-3xl w-3/4 border-b-2 border-b-gray-300 py-7">
               جوراب ساق بلند مردانه سیرداش طرح ساده مدل ۳۱۱ بسته ۳ عددی
             </h1>
           </div>
-          <div class="flex">
-            <div>امتیاز</div>
-            <div>نظرات</div>
+          <div class="flex my-5">
+            <div class="text-gray-600 text-lg">4/6</div>
+            <div dir="ltr" class="text-yellow-500 text-lg">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div class="text-gray-600">(128) نظر</div>
           </div>
-          <div>
+          <div class="mr-3 my-5">
             <div class="grid grid-cols-[1fr_3fr] gap-2 w-1/10">
-              <div class="text-lg line-through text-gray-500">100000</div>
+              <div class="text-xl line-through text-gray-500">100,000</div>
               <div
                 class="text-md text-white rounded-4xl bg-red-600 py-0.5 px-2"
               >
@@ -100,7 +109,7 @@
               </div>
             </div>
             <div class="flex">
-              <div class="text-3xl font-bold">85000</div>
+              <div class="text-4xl font-bold">85,000</div>
               <span class="text-xl text-blue-600 font-bold">تومان</span>
             </div>
           </div>
@@ -115,30 +124,80 @@
             </div>
           </div>
           <article
-            class="grid grid-cols-4 bg-linear-to-r from-blue-400 to-blue-500 rounded-lg p-5 my-3"
+            class="grid grid-cols-4 bg-linear-to-br from-blue-500 to-blue-700 rounded-lg  p-1 my-5 text-white text-center text-lg"
           >
-            <div class="p-2 fa-solid">
-             <div>خرید مطمئن</div><i class="fa-shield-halved "></i>
+            <div class="p-2">
+              <div>خرید مطمئن</div>
+              <div><i class="fa-solid fa-shield-halved text-lg p-1"></i></div>
             </div>
-            <div class="border-r-2 border-gray-500 p-2 ml-2">ارسال سریع</div>
-            <div class="border-r-2 border-gray-500 p-2 ml-2">پشتیبانی ۲۴/۷</div>
             <div class="border-r-2 border-gray-500 p-2 ml-2">
-              ۷ روز ضمانت بازگشت
+              <div>ارسال سریع</div>
+              <div><i class="fa-solid fa-truck-fast text-lg p-1"></i></div>
+            </div>
+            <div class="border-r-2 border-gray-500 p-2 ml-2">
+              <div>پشتیبانی 24/7</div>
+              <div><i class="fa-solid fa-headset text-lg p-1"></i></div>
+            </div>
+            <div class="border-r-2 border-gray-500 p-2 ml-2">
+              <div>ضمانت بازگشت</div>
+              <div><i class="fa-solid fa-rotate-left text-lg p-1"></i></div>
             </div>
           </article>
-          <div class="flex">
-            <div>افزودن به سبد خرید</div>
-            <div class="flex">
-              <div class="rounded-r-md border border-gray-400">+</div>
-              <div class="border border-gray-400">1</div>
-              <div class="rounded-l-md border border-gray-400">-</div>
+          <div class="grid grid-cols-[8fr_1fr] gap-4 text-center">
+            <div
+              class="rounded-md bg-linear-to-r from-blue-500 to-blue-600 p-3 py-4 text-white"
+            >
+              افزودن به سبد خرید
+            </div>
+            <div class="flex text-lg">
+              <div
+                class="rounded-r-md border border-gray-400 flex items-center"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div
+                class="border border-gray-400 p-1 px-3 font-bold text-xl flex items-center"
+              >
+                1
+              </div>
+              <div
+                class="rounded-l-md border border-gray-400 flex items-center"
+              >
+                <i class="fa-solid fa-minus"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="text-center justify-center flex border border-gray-300 shadow-md rounded-md p-2 my-2"
+          >
+            <div>افزودن به علاقه مندی</div>
+            <div>
+              <i
+                class="fa-solid fa-heart text-gray-600 hover:text-red-600 duration-150"
+              ></i>
             </div>
           </div>
         </article>
       </section>
-      <section></section>
-      <section></section>
-      <section></section>
+      <section class="p-3">
+        <h2 class="text-2xl">توضیحات</h2>
+        <div>
+          جوراب ساق بلند مردانه سیرداش مدل ۳۱۱، انتخابی مناسب برای آقایانی است
+          که به راحتی و سادگی در پوشش روزانه خود اهمیت می‌دهند. این محصول با
+          طراحی ساده و ظاهری کلاسیک، به‌راحتی با انواع کفش و استایل روزمره
+          هماهنگ می‌شود. این بسته شامل سه جفت جوراب است که می‌توانید در
+          موقعیت‌های مختلف روزمره از آن‌ها استفاده کنید.
+        </div>
+        <h2 class="text-2xl mt-4">ویژگی های محصول</h2>
+        <ul class="list-disc list-inside">
+          <li>طراحی ساده و کلاسیک بسته‌بندی سه‌عددی</li>
+          <li>مناسب استفاده روزمره</li>
+          <li>ساق بلند با پوشش مناسب</li>
+          <li>بافت نرم و راحت</li>
+          <li>قابل استفاده در محیط کار و فعالیت‌های روزانه</li>
+          
+        </ul>
+      </section>
     </main>
     <footer
       dir="rtl"
