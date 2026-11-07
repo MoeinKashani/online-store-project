@@ -26,3 +26,5 @@
 @theme {
   --font-lalezar: "Lalezar", sans-serif;
 }
+
+@source "../js/script.js";
