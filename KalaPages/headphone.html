@@ -13,27 +13,46 @@
   <body class="font-iranyekan p-4">
     <header
       dir="ltr"
-      class="border-2 border-blue-500/5 shadow-sm p-4 rounded-t-2xl rounded-b-md flex flex-wrap justify-between"
+      class="cart mb-2 border-2 border-blue-500/5 shadow-sm p-4 rounded-t-2xl rounded-b-md flex flex-wrap justify-between"
     >
-      <div class="flex flex-wrap gap-3">
-        <div class="cart flex">
+      <div class="flex flex-wrap gap-3 ">
+        <div class="cart flex relative ">
+          <div class="tedadKala absolute bg-red-500/90 rounded-full w-5 h-5 text-sm justify-center flex items-center hidden"></div>
           <a href="../cart.html"
-            ><i class="fa-solid fa-cart-shopping text-blue-600 text-2xl p-2"></i
+            ><i
+              class="fa-solid fa-cart-shopping text-blue-600 text-3xl p-2 duration-500 hover:text-blue-400"
+            ></i
           ></a>
         </div>
         <div
           class="signIn border-2 hover:border-blue-950 flex bg-linear-to-r cursor-pointer from-blue-500 to-blue-600 p-2 px-4 rounded-md text-white font-bold"
         >
-          <a href="../signup.html"> ثبت نام | ورود </a>
+          <a href="./signup.html"> ثبت نام | ورود </a>
         </div>
+        <a href="./profile.html">
+          <div
+            class="flex rounded-md p-0.5 bg-blue-200 hover:bg-blue-100 duration-500 hover:text-blue-900"
+          >
+            <div class="text-lg text-blue-600 p-1.5 px-2 font-bold">
+              <i
+                class="fa-regular fa-user border-blue-300 flex p-1 scale-x-107 hover:text-blue-700 duration-500"
+              ></i>
+            </div>
+            <div class="flex items-center text-lg font-bold text-blue-600">
+              حساب کاربری
+            </div>
+          </div>
+        </a>
       </div>
-      <div class="flex flex-wrap gap-5">
+
+      <div class="flex flex-wrap gap-5 relative">
+        <div class="searchResultBox -z-2 w-96 absolute top-11"></div>
         <div
-          class="searchBar flex flex-wrap border-2 border-blue-500/5 shadow-sm rounded-md w-96 h-10"
+          class="flex flex-wrap border-2 border-blue-500/5 shadow-sm rounded-md w-96 h-10"
         >
           <input
             dir="rtl"
-            class="placeholder:mx-1 placeholder: placeholder:text-gray-300 flex flex-150 focus:outline-blue-600"
+            class="searchBar placeholder:mx-1 placeholder:text-gray-300 flex flex-150 focus:outline-blue-600"
             type="text"
             name=""
             id=""
@@ -42,13 +61,14 @@
           <div
             class="p-2 flex-1 text-blue-900/70 cursor-pointer hover:to-blue-500 transition duration-300"
           >
-            <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+            <i class="magnify fa-solid fa-magnifying-glass cursor-pointer"></i>
           </div>
         </div>
-        <a href="../index.html">
-          <div class="logo flex cursor-pointer">
+
+        <a href="../index.html"
+          ><div class="logo flex cursor-pointer">
             <div
-              class="text-2xl font-bold fontmono bg-linear-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent m-1"
+              class="text-2xl bg-linear-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent m-1 font-bold"
             >
               جورکالا
             </div>
@@ -60,10 +80,10 @@
         ></a>
       </div>
     </header>
-    <section class="text-gray-600 p-2 pr-4">
-      <a class="hover:text-blue-600 duration-100" href="">خانه></a
-      ><a class="hover:text-blue-600 duration-100" href="">محصولات></a
-      ><a class="hover:text-blue-600 duration-100" href="">جوراب مردانه</a>
+    <section class="text-gray-600 p-2 pr-4 ">
+      <a class="hover:text-blue-600 duration-100" href="../index.html">خانه></a
+      ><a class="hover:text-blue-600 duration-100" href="../products.html">محصولات></a
+      ><a class="hover:text-blue-600 duration-100" href="./headphone.html">جوراب مردانه</a>
     </section>
     <main
       class="mx-[10%] m-4 border grid gap-3 border-gray-300 rounded-md shadow-md p-2"
@@ -143,28 +163,31 @@
               <div><i class="fa-solid fa-rotate-left text-lg p-1"></i></div>
             </div>
           </article>
-          <div class="grid grid-cols-[8fr_1fr] gap-4 text-center">
+          <div class="bigContainer grid  gap-4 text-center">
             <div
-              class="rounded-md bg-linear-to-r from-blue-500 to-blue-600 p-3 py-4 text-white"
+              class="addToCart cursor-cell rounded-md bg-linear-to-r from-blue-500 to-blue-600 p-3 py-4 text-white"
             >
               افزودن به سبد خرید
             </div>
-            <div class="flex text-lg">
-              <div
-                class="rounded-r-md border border-gray-400 flex items-center"
-              >
-                <i class="fa-solid fa-plus"></i>
+            <div class="container flex text-lg items-center">
+              <div class="flex">
+                <div
+                  class="afzayesh rounded-r-md border border-gray-400 flex items-center"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div
+                  class="tedad border border-gray-400 p-1 px-3 font-bold text-xl flex items-center"
+                >
+                  0
+                </div>
+                <div
+                  class="rounded-l-md border border-gray-400 flex items-center"
+                >
+                  <i class="kahesh fa-solid fa-minus"></i>
+                </div>
               </div>
-              <div
-                class="border border-gray-400 p-1 px-3 font-bold text-xl flex items-center"
-              >
-                1
-              </div>
-              <div
-                class="rounded-l-md border border-gray-400 flex items-center"
-              >
-                <i class="fa-solid fa-minus"></i>
-              </div>
+              <i class="trashButton fa-solid fa-trash text-2xl hover:text-red-600 duration-100"></i>
             </div>
           </div>
           <div
@@ -284,5 +307,6 @@
         تنظیمات کوکی‌ها
       </div>
     </footer>
+    <script src="../src/JS/KalaPagesJS/HeadphonePage.JS"></script>
   </body>
 </html>

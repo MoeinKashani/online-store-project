@@ -15,25 +15,44 @@
       dir="ltr"
       class="cart mb-2 border-2 border-blue-500/5 shadow-sm p-4 rounded-t-2xl rounded-b-md flex flex-wrap justify-between"
     >
-      <div class="flex flex-wrap gap-2">
-        <div class="cart flex">
-          <i
-            class="fa-solid fa-cart-shopping cursor-pointer text-blue-600 text-2xl p-2"
-          ></i>
+      <div class="flex flex-wrap gap-3 ">
+        <div class="cart flex relative ">
+          <div class="tedadKala absolute bg-red-500/90 rounded-full w-5 h-5 text-sm justify-center flex items-center hidden"></div>
+          <a href="./cart.html"
+            ><i
+              class="fa-solid fa-cart-shopping text-blue-600 text-3xl p-2 duration-500 hover:text-blue-400"
+            ></i
+          ></a>
         </div>
         <div
-          class="signIn border-2 hover:border-blue-950 flex bg-linear-to-r cursor-pointer from-blue-500 to-blue-600 p-2 rounded-md text-white"
+          class="signIn border-2 hover:border-blue-950 flex bg-linear-to-r cursor-pointer from-blue-500 to-blue-600 p-2 px-4 rounded-md text-white font-bold"
         >
-          <a class="px-2" href="./signup.html"> ثبت نام | ورود </a>
+          <a href="./signup.html"> ثبت نام | ورود </a>
         </div>
+        <a href="./profile.html">
+          <div
+            class="flex rounded-md p-0.5 bg-blue-200 hover:bg-blue-100 duration-500 hover:text-blue-900"
+          >
+            <div class="text-lg text-blue-600 p-1.5 px-2 font-bold">
+              <i
+                class="fa-regular fa-user border-blue-300 flex p-1 scale-x-107 hover:text-blue-700 duration-500"
+              ></i>
+            </div>
+            <div class="flex items-center text-lg font-bold text-blue-600">
+              حساب کاربری
+            </div>
+          </div>
+        </a>
       </div>
-      <div class="flex flex-wrap gap-5">
+
+      <div class="flex flex-wrap gap-5 relative">
+        <div class="searchResultBox -z-2 w-96 absolute top-11"></div>
         <div
-          class="searchBar flex flex-wrap border-2 border-blue-500/5 shadow-sm rounded-md w-96 h-10"
+          class="flex flex-wrap border-2 border-blue-500/5 shadow-sm rounded-md w-96 h-10"
         >
           <input
             dir="rtl"
-            class="placeholder:mx-1 placeholder:text-gray-300 flex flex-150 focus:outline-blue-600"
+            class="searchBar placeholder:mx-1 placeholder:text-gray-300 flex flex-150 focus:outline-blue-600"
             type="text"
             name=""
             id=""
@@ -42,27 +61,28 @@
           <div
             class="p-2 flex-1 text-blue-900/70 cursor-pointer hover:to-blue-500 transition duration-300"
           >
-            <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+            <i class="magnify fa-solid fa-magnifying-glass cursor-pointer"></i>
           </div>
         </div>
 
-        <div class="logo flex cursor-pointer">
-          <div
-            class="text-2xl bg-linear-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent m-1"
-          >
-            جورکالا
-          </div>
-          <img
-            class="w-10 h-8 rounded-md mt-2"
-            src="/Online-Store-Project/images/Minimal Blue Shopping Cart Emblem.png"
-            alt=""
-          />
-        </div>
+        <a href="./index.html"
+          ><div class="logo flex cursor-pointer">
+            <div
+              class="text-2xl bg-linear-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent m-1 font-bold"
+            >
+              جورکالا
+            </div>
+            <img
+              class="w-10 h-8 rounded-md mt-2"
+              src="/Online-Store-Project/images/Minimal Blue Shopping Cart Emblem.png"
+              alt=""
+            /></div
+        ></a>
       </div>
     </header>
-    <main class="grid grid-cols-[3fr_1fr] gap-4">
+    <main class="grid grid-cols-[2fr_1fr] gap-4">
       <section
-        class="w-full h-96 border-2 border-blue-500/5 shadow-sm"
+        class="sefareshat w-full h-96 border-2 border-blue-500/5 shadow-sm"
       ></section>
       <section
         class="w-full h-96 border-2 border-blue-500/5 shadow-sm p-2 flex flex-col"
@@ -79,7 +99,7 @@
     </main>
     <footer
       dir="rtl"
-      class="border-2 border-blue-500/5 shadow-sm p-6 rounded-md rounded-b-2xl my-3 mt-52 block"
+      class="cart border-2 border-blue-500/5 shadow-sm p-6 rounded-md rounded-b-2xl my-2 mt-5"
     >
       <div class="flex border-b-2 border-gray-800 p-0.5">
         <div class="w-1/5 p-4 text-right">
@@ -95,45 +115,89 @@
           <div class="text-gray-400">جور کالا، محصولات جورواجور جوره!</div>
         </div>
         <div class="w-1/5 p-4 text-right mx-4">
-          <div class="text-gray-400"><a href="">ویژگی ها</a></div>
+          <a href="./about.html"
+            ><div
+              class="text-gray-400 hover:text-blue-600 cursor-pointer duration-75"
+            >
+              درباره جورکالا
+            </div></a
+          >
+          <a href="./about.html"
+            ><div
+              class="text-gray-400 hover:text-blue-600 cursor-pointer duration-75"
+              class="text-gray-400"
+            >
+              درباره ما
+            </div></a
+          >
+
           <div
-            class="text-gray-400"
-            class="text-gray-400"
-            class="text-gray-400"
+            class="text-gray-400 hover:text-blue-600 cursor-pointer duration-75"
           >
             <a href="#pricing">محصولات</a>
           </div>
+
+          <a href="./signup.html"
+            ><div
+              class="text-gray-400 hover:text-blue-600 cursor-pointer duration-75"
+            >
+              ثبت نام
+            </div></a
+          >
+        </div>
+
+        <div class="w-1/5 p-4 text-right">
           <div
+            class="text-gray-400 hover:text-blue-600 cursor-pointer duration-75"
             class="text-gray-400"
+          >
+            فرصت های شغلی
+          </div>
+          <div
+            class="text-gray-400 hover:text-blue-600 cursor-pointer duration-75"
+          >
+            <a href="">ویژگی ها</a>
+          </div>
+          <div
+            class="text-gray-400 hover:text-blue-600 cursor-pointer duration-75"
             class="text-gray-400"
-            class="text-gray-400"
+          >
+            وبلاگ
+          </div>
+          <div
+            class="text-gray-400 hover:text-blue-600 cursor-pointer duration-75"
           >
             راهنمای خرید
           </div>
-          <div
-            class="text-gray-400"
-            class="text-gray-400"
-            class="text-gray-400"
-          >
-            گزارش تغییرات
-          </div>
-        </div>
-
-        <div class="w-1/5 p-4 text-right">
-          <div class="text-gray-400">درباره جورکالا</div>
-          <div class="text-gray-400" class="text-gray-400">درباره ما</div>
-          <div class="text-gray-400" class="text-gray-400">فرصت های شغلی</div>
-          <div class="text-gray-400" class="text-gray-400">وبلاگ</div>
         </div>
         <div dir="rtl" class="w-1/5 p-4 text-right mx-4">
-          <div class="text-gray-400">خدمات مشتریان</div>
+          <div
+            class="text-gray-400 hover:text-blue-600 cursor-pointer duration-75"
+          >
+            خدمات مشتریان
+          </div>
 
-          <div class="text-gray-400">مرکز پشتیبانی</div>
-          <div class="text-gray-400">راهنمای ثبت سفارش</div>
-          <div class="text-gray-400" class="text-gray-400">قوانین و مقررات</div>
+          <div
+            class="text-gray-400 hover:text-blue-600 cursor-pointer duration-75"
+          >
+            مرکز پشتیبانی
+          </div>
+          <div
+            class="text-gray-400 hover:text-blue-600 cursor-pointer duration-75"
+          >
+            راهنمای ثبت سفارش
+          </div>
+          <div
+            class="text-gray-400 hover:text-blue-600 cursor-pointer duration-75"
+            class="text-gray-400"
+          >
+            قوانین و مقررات
+          </div>
         </div>
         <div class="w-1/5 p-4 text-right">
-          <div class="text-gray-400 text-right">
+          <div
+            class="text-gray-400 hover:text-blue-600 cursor-pointer duration-75 text-right"
+          >
             برای اطلاع از اخبار و تخفیف ها عضو شوید.
           </div>
           <form
@@ -162,5 +226,6 @@
         تنظیمات کوکی‌ها
       </div>
     </footer>
+    <script src="./src/JS/cart.js"></script>
   </body>
 </html>
