@@ -93,4 +93,5 @@ if (totalCount != 0) {
   tedadKala.classList.remove("hidden");
 }
 
-
+localStorage.setItem("headPhoneDiscount","0.20");
+localStorage.setItem("jurabDiscount","0.15");
