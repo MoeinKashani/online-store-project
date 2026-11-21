@@ -104,3 +104,14 @@ searchBar.addEventListener("keydown", function (e) {
     magnify.click();
   }
 });
+let tedadKala = document.querySelector(".tedadKala");
+localStorage.setItem(
+  "totalCount",
+(Number(localStorage.getItem("sefareshHeadphone")) +
+    Number(localStorage.getItem("sefareshJurab"))
+));
+let totalCount = localStorage.getItem("totalCount");
+if (totalCount != 0) {
+  tedadKala.innerHTML = totalCount;
+  tedadKala.classList.remove("hidden");
+}

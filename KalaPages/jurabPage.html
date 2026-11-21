@@ -10,18 +10,18 @@
       href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
     />
   </head>
-  <body class="font-iranyekan p-4">
+  <body class="font-iranyekan p-2">
     <header
-      class="mb-2 border-2 border-blue-500/5 shadow-sm p-4 rounded-t-2xl rounded-b-md flex flex-wrap justify-between max-md:text-sm"
+      class="mb-2 bg-white/70 backdrop-blur-md border-2 border-blue-500/5 shadow-sm p-4 rounded-t-2xl rounded-b-md flex flex-wrap justify-between max-md:text-sm sticky top-1 z-40"
     >
       <div class="flex flex-wrap gap-5 relative max-md:w-full">
         <div class="flex max-md:grid max-md:grid-cols-[1fr_9fr] max-md:w-full">
           <a href="../index.html" class="">
             <div class="logo flex cursor-pointer">
               <img
-                class="w-10 h-8 rounded-md mt-2"
+                class="w-10 h-10 rounded-4xl border-2 border-blue-500/50"
                 src="/Online-Store-Project/images/Minimal Blue Shopping Cart Emblem.png"
-                alt=""
+                alt="logo"
               />
               <div
                 class="text-2xl bg-linear-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent m-1 font-bold max-md:hidden"
@@ -56,12 +56,14 @@
         class="flex flex-wrap gap-3 max-md:w-full mt-0 max-md:justify-end max-md:mt-1"
       >
         <div
-          class="signIn border-2 hover:border-blue-950 flex bg-linear-to-r cursor-pointer from-blue-500 to-blue-600 p-2 px-4 rounded-md text-white font-bold items-center max-md:p-0"
+          title="ثبت نام"
+          class="signIn border-2 border-blue-900/10 hover:border-blue-900 duration-500 flex bg-linear-to-br cursor-pointer from-blue-500 to-blue-700 p-2 px-4 rounded-md text-white font-bold items-center max-md:p-0"
         >
           <a href="../signup.html"> ثبت نام | ورود </a>
         </div>
         <div
           class="flex rounded-md p-2 bg-blue-200 hover:bg-blue-100 duration-500 hover:text-blue-900 max-md:p-0"
+          title="مشاهده حساب کاربری"
         >
           <a href="../profile.html" class="flex">
             <i
@@ -75,9 +77,9 @@
             </div>
           </a>
         </div>
-        <div class="cart flex relative">
+        <div class="cart flex relative ml-3" title="مشاهده سبد">
           <div
-            class="tedadKala absolute text-white bg-red-500/90 rounded-full w-5 h-5 text-sm justify-center items-center hidden"
+            class="tedadKala absolute text-white bg-red-500/90 rounded-full w-5 h-5 text-[12px] justify-center items-center hidden font-bold px-1.5 py-0.5"
           ></div>
           <a href="../cart.html"
             ><i

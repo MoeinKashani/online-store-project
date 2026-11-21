@@ -10,18 +10,20 @@
       href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
     />
   </head>
-  <body class="p-4 bg-white relative font-iranyekan">
+  <body
+  class="p-2 pt-0 bg-white relative font-iranyekan "
+>
     <header
-      class="mb-2 border-2 border-blue-500/5 shadow-sm p-4 rounded-t-2xl rounded-b-md flex flex-wrap justify-between max-md:text-sm"
+      class="mb-2 bg-white/70 backdrop-blur-md border-2 border-blue-500/5 shadow-sm p-4 rounded-t-2xl rounded-b-md flex flex-wrap justify-between max-md:text-sm sticky top-1 z-40"
     >
       <div class="flex flex-wrap gap-5 relative max-md:w-full">
         <div class="flex max-md:grid max-md:grid-cols-[1fr_9fr] max-md:w-full">
           <a href="./index.html" class="">
             <div class="logo flex cursor-pointer">
               <img
-                class="w-10 h-8 rounded-md mt-2"
+                class="w-10 h-10 rounded-4xl border-2 border-blue-500/50"
                 src="/Online-Store-Project/images/Minimal Blue Shopping Cart Emblem.png"
-                alt=""
+                alt="logo"
               />
               <div
                 class="text-2xl bg-linear-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent m-1 font-bold max-md:hidden"
@@ -56,16 +58,18 @@
         class="flex flex-wrap gap-3 max-md:w-full mt-0 max-md:justify-end max-md:mt-1"
       >
         <div
-          class="signIn border-2 hover:border-blue-950 flex bg-linear-to-r cursor-pointer from-blue-500 to-blue-600 p-2 px-4 rounded-md text-white font-bold items-center max-md:p-0"
+          title="ثبت نام"
+          class="signIn border-2 border-blue-900/10 hover:border-blue-900 duration-500 flex bg-linear-to-br cursor-pointer from-blue-500 to-blue-700 p-2 px-4 rounded-md text-white font-bold items-center max-md:p-0"
         >
           <a href="./signup.html"> ثبت نام | ورود </a>
         </div>
         <div
           class="flex rounded-md p-2 bg-blue-200 hover:bg-blue-100 duration-500 hover:text-blue-900 max-md:p-0"
+          title="مشاهده حساب کاربری"
         >
           <a href="./profile.html" class="flex">
             <i
-              class="fa-regular fa-user border-blue-300 scale-x-107 hover:text-blue-700 duration-500 text-lg text-blue-600 mt-1 font-bold mr-1 max-md:p-2 max-md:pl-1 max-md:hidden" 
+              class="fa-regular fa-user border-blue-300 scale-x-107 hover:text-blue-700 duration-500 text-lg text-blue-600 mt-1 font-bold mr-1 max-md:p-2 max-md:pl-1 max-md:hidden"
             >
             </i>
             <div
@@ -75,9 +79,9 @@
             </div>
           </a>
         </div>
-        <div class="cart flex relative">
+        <div class="cart flex relative ml-3" title="مشاهده سبد">
           <div
-            class="tedadKala absolute text-white bg-red-500/90 rounded-full w-5 h-5 text-sm justify-center items-center hidden"
+            class="tedadKala absolute text-white bg-red-500/90 rounded-full w-5 h-5 text-[12px] justify-center items-center hidden font-bold px-1.5 py-0.5"
           ></div>
           <a href="./cart.html"
             ><i
@@ -87,10 +91,10 @@
         </div>
       </div>
     </header>
-    <section class="grid grid-cols-[19fr_1fr] ml-3">
+    <section class="grid  max-md:text-center">
       <nav dir="rtl" class="cart flex">
         <div
-          class="grid grid-cols-6 my-2 w-1/2 rounded-md flex-wrap justify-start gap-2 z-1 text-[14px] max-md:w-full max-md:text-sm max-md:grid-cols-3"
+          class="grid grid-cols-6  min-w-1/2 max-w-3/4 rounded-md flex-wrap justify-start gap-2 z-1 text-[14px] max-md:min-w-full max-md:text-sm max-md:grid-cols-3"
         >
           <!-- <div class="text-blue-600 text-xl p-4 font-extrabold flex w-1/2">
             <i class="fa-solid fa-bars"></i>
@@ -118,6 +122,11 @@
           <div
             class="flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
           >
+           ماشین و موتور
+          </div>
+          <div
+            class="flex border border-gray-200 text-gray-500 rounded-md p-1 hover:bg-blue-600 hover:text-white transition duration-300 cursor-pointer px-1.5"
+          >
             سوپرمارکت
           </div>
         </div>
@@ -126,20 +135,34 @@
     <section class="relative">
       <img
         src="./images/Modern Online Shopping Electronics Banner.png"
-        alt=""
-        class="rounded-lg mb-6 max-md:scale-y-115 max-md:mt-3"
+        alt="Banner"
+        class="rounded-lg mb-6 max-md:mt-3 scale-y-95 scale-x-99 hover:scale-y-100 hover:scale-x-100 duration-10000 max-md:hidden  "
       />
       <a href="./products.html"
         ><div
-          class="prodBtn h-[17%] w-[20.5%] absolute hover:border-5 ease-in-out duration-300 border-blue-950 z-10 bg-linear-to-r from-blue-500 to-blue-700 text-2xl text-white px-2 pb-2 right-[12%] top-[72%] rounded-full flex items-center justify-center max-md:scale-175 max-md:top-[80%] max-md:text-[7px] max-md:p-1 max-lg:text-sm md:text-lg"
+          class="prodBtn h-[12%] w-[22.5%] absolute hover:border-3 ease-in-out duration-300 border-blue-700 z-10 bg-linear-to-r from-blue-500 to-blue-700 text-[18px] text-white px-2 py-0 right-[12%] top-[72%] rounded-full flex items-center justify-center max-md:scale-175 max-md:top-[80%] max-md:text-[7px] max-md:p-1 max-md:hidden"
         >
           مشاهده محصولات
         </div></a
       >
     </section>
-    <main class="rounded-md my-2">
+    <section class="relative">
+      <img
+        src="./images/Modern Blue Electronics Shopping Banner.png"
+        alt="Banner"
+        class="rounded-lg mb-6 max-md:mt-3 scale-y-95 scale-x-99 hover:scale-y-100 hover:scale-x-100 duration-10000 lg:hidden md:hidden  "
+      />
+    <!--   <a href="./products.html"
+        ><div
+          class="prodBtn h-[12%] w-[22.5%] absolute hover:border-3 ease-in-out duration-300 border-blue-700 z-10 bg-linear-to-r from-blue-500 to-blue-700 text-[18px] text-white px-2 py-0 right-[12%] top-[72%] rounded-full flex items-center justify-center max-md:scale-175 max-md:top-[80%] max-md:text-[7px] max-md:p-1"
+        >
+          مشاهده محصولات
+        </div></a
+      > -->
+    </section>
+    <main class="rounded-md bg-repeat bg-[url('../images/Minimalist%20Shopping%20Cart%20Pattern.png')] bg-size-[420px]" >
       <section
-        class="rounded-md bg-linear-to-r from-blue-500 to-blue-700 relative p-5 pr-30 flex items-center"
+        class="rounded-md bg-linear-to-r from-blue-700/75  to-blue-800/90 relative p-5 pr-30 flex items-center "
       >
         <div
           class="absolute flex right-4 h-65 w-25 text-3xl text-white items-center"
@@ -148,18 +171,18 @@
         </div>
         <div
           id="rightBtn"
-          class="rightBtn p-5 hover:bg-gray-600/30 duration-150 cursor-pointer absolute flex h-7 rounded-full bg-gray-600/50 w-7 right-30 justify-center text-2xl items-center font-extrabold rounded-r-sm z-1"
+          class="rightBtn p-5 hover:bg-gray-600/30 duration-150 cursor-pointer absolute flex h-7 rounded-full bg-gray-600/50 w-7 right-32 justify-center text-2xl items-center font-extrabold z-1"
         >
           <i class="fa-solid fa-chevron-right"></i>
         </div>
         <div
           id="leftBtn"
-          class="leftBtn p-5 hover:bg-gray-600/30 duration-150 cursor-pointer absolute flex h-7 rounded-full bg-gray-600/50 w-7 left-5 justify-center text-2xl items-center font-extrabold rounded-l-sm z-10"
+          class="leftBtn p-5 hover:bg-gray-600/30 duration-150 cursor-pointer absolute flex h-7 rounded-full bg-gray-600/50 w-7 left-7 justify-center text-2xl items-center font-extrabold z-10"
         >
           <i class="fa-solid fa-chevron-left"></i>
         </div>
 
-        <div class="w-full overflow-hidden rounded-md">
+        <div class="w-full overflow-hidden rounded-md max-md:scale-105">
           <div
             id="slider"
             class="slider flex flex-nowrap gap-1 transition-transform duration-300"
@@ -171,7 +194,7 @@
                 ><img
                   class="w-40 h-40 rounded-t-md"
                   src="./images/ـJurab-photo.png"
-                  alt=""
+                  alt="jurab"
                 />
                 <div
                   dir="ltr"
@@ -202,7 +225,7 @@
                 ><img
                   class="w-40 h-40 rounded-t-md"
                   src="./images/Headphone-photo.png"
-                  alt=""
+                  alt="headphone"
                 />
                 <div
                   dir="ltr"
@@ -233,7 +256,7 @@
                 ><img
                   class="w-40 h-40 rounded-t-md"
                   src="./images/ـJurab-photo.png"
-                  alt=""
+                  alt="jurab"
                 />
                 <div
                   dir="ltr"
@@ -264,7 +287,7 @@
                 ><img
                   class="w-40 h-40 rounded-t-md"
                   src="./images/Headphone-photo.png"
-                  alt=""
+                  alt="headphone"
                 />
                 <div
                   dir="ltr"
@@ -295,7 +318,7 @@
                 ><img
                   class="w-40 h-40 rounded-t-md"
                   src="./images/ـJurab-photo.png"
-                  alt=""
+                  alt="jurab"
                 />
                 <div
                   dir="ltr"
@@ -326,7 +349,7 @@
                 ><img
                   class="w-40 h-40 rounded-t-md"
                   src="./images/Headphone-photo.png"
-                  alt=""
+                  alt="headphone"
                 />
                 <div
                   dir="ltr"
@@ -357,7 +380,7 @@
                 ><img
                   class="w-40 h-40 rounded-t-md"
                   src="./images/ـJurab-photo.png"
-                  alt=""
+                  alt="jurab"
                 />
                 <div
                   dir="ltr"
@@ -388,7 +411,7 @@
                 ><img
                   class="w-40 h-40 rounded-t-md"
                   src="./images/Headphone-photo.png"
-                  alt=""
+                  alt="headphone"
                 />
                 <div
                   dir="ltr"
@@ -419,7 +442,7 @@
                 ><img
                   class="w-40 h-40 rounded-t-md"
                   src="./images/ـJurab-photo.png"
-                  alt=""
+                  alt="jurab"
                 />
                 <div
                   dir="ltr"
@@ -450,7 +473,7 @@
                 ><img
                   class="w-40 h-40 rounded-t-md"
                   src="./images/Headphone-photo.png"
-                  alt=""
+                  alt="headphone"
                 />
                 <div
                   dir="ltr"
@@ -481,7 +504,7 @@
                 ><img
                   class="w-40 h-40 rounded-t-md"
                   src="./images/ـJurab-photo.png"
-                  alt=""
+                  alt="jurab"
                 />
                 <div
                   dir="ltr"
@@ -512,7 +535,7 @@
                 ><img
                   class="w-40 h-40 rounded-t-md"
                   src="./images/Headphone-photo.png"
-                  alt=""
+                  alt="headphone"
                 />
                 <div
                   dir="ltr"
@@ -543,7 +566,7 @@
                 ><img
                   class="w-40 h-40 rounded-t-md"
                   src="./images/ـJurab-photo.png"
-                  alt=""
+                  alt="jurab"
                 />
                 <div
                   dir="ltr"
@@ -574,7 +597,7 @@
                 ><img
                   class="w-40 h-40 rounded-t-md"
                   src="./images/Headphone-photo.png"
-                  alt=""
+                  alt="headphone"
                 />
                 <div
                   dir="ltr"
@@ -605,7 +628,7 @@
                 ><img
                   class="w-40 h-40 rounded-t-md"
                   src="./images/ـJurab-photo.png"
-                  alt=""
+                  alt="jurab"
                 />
                 <div
                   dir="ltr"
@@ -636,7 +659,7 @@
                 ><img
                   class="w-40 h-40 rounded-t-md"
                   src="./images/Headphone-photo.png"
-                  alt=""
+                  alt="headphone"
                 />
                 <div
                   dir="ltr"
@@ -667,7 +690,7 @@
                 ><img
                   class="w-40 h-40 rounded-t-md"
                   src="./images/ـJurab-photo.png"
-                  alt=""
+                  alt="jurab"
                 />
                 <div
                   dir="ltr"
@@ -698,7 +721,7 @@
                 ><img
                   class="w-40 h-40 rounded-t-md"
                   src="./images/Headphone-photo.png"
-                  alt=""
+                  alt="headphone"
                 />
                 <div
                   dir="ltr"
@@ -729,7 +752,7 @@
                 ><img
                   class="w-40 h-40 rounded-t-md"
                   src="./images/ـJurab-photo.png"
-                  alt=""
+                  alt="jurab"
                 />
                 <div
                   dir="ltr"
@@ -760,7 +783,7 @@
                 ><img
                   class="w-40 h-40 rounded-t-md"
                   src="./images/Headphone-photo.png"
-                  alt=""
+                  alt="headphone"
                 />
                 <div
                   dir="ltr"
@@ -790,14 +813,16 @@
 
       <section class="">
         <header class="text-4xl m-2 my-8">محصولات پرفروش</header>
-        <div class="grid grid-cols-6 gap-4 max-md:grid-cols-3">
+        <div
+          class="grid grid-cols-6 gap-4 max-md:grid-cols-2 max-lg:grid-cols-3 max-lg:gap-2.5 max-md:gap-1 bg-repeat bg-[url('../images/Minimalist%20Shopping%20Cart%20Pattern.png')] bg-size-[420px]"
+        >
           <a href="./KalaPages/jurabPage.html"
             ><article
-              class="bg-white border border-gray-300 shadow-md flex rounded-md p-2 hover:shadow-xl duration-150 hover:scale-101"
+              class="bg-white/75  border border-gray-300 shadow-md flex rounded-md p-2 hover:shadow-xl duration-150 hover:scale-101"
             >
               <div class="p-3">
                 <div class="block w-full">
-                  <img src="./images/ـJurab-photo.png" alt="" />
+                  <img src="./images/ـJurab-photo.png" alt="jurab" />
                 </div>
                 <div class="block h-12 overflow-clip">
                   جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
@@ -819,11 +844,11 @@
           >
           <a href="./KalaPages/headphone.html"
             ><article
-              class="bg-white border border-gray-300 shadow-md flex rounded-md p-2 hover:shadow-xl duration-150 hover:scale-101"
+              class="bg-white/75 border border-gray-300 shadow-md flex rounded-md p-2 hover:shadow-xl duration-150 hover:scale-101"
             >
               <div class="p-3">
                 <div class="block w-full">
-                  <img src="./images/Headphone-photo.png" alt="" />
+                  <img src="./images/Headphone-photo.png" alt="headphone" />
                 </div>
                 <div class="block h-12 overflow-clip">
                   هدفون بلوتوثی انکر مدل Soundcore R50i
@@ -845,11 +870,11 @@
           >
           <a href="./KalaPages/jurabPage.html"
             ><article
-              class="bg-white border border-gray-300 shadow-md flex rounded-md p-2 hover:shadow-xl duration-150 hover:scale-101"
+              class="bg-white/75 border border-gray-300 shadow-md flex rounded-md p-2 hover:shadow-xl duration-150 hover:scale-101"
             >
               <div class="p-3">
                 <div class="block w-full">
-                  <img src="./images/ـJurab-photo.png" alt="" />
+                  <img src="./images/ـJurab-photo.png" alt="jurab" />
                 </div>
                 <div class="block h-12 overflow-clip">
                   جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
@@ -871,11 +896,11 @@
           >
           <a href="./KalaPages/headphone.html"
             ><article
-              class="bg-white border border-gray-300 shadow-md flex rounded-md p-2 hover:shadow-xl duration-150 hover:scale-101"
+              class="bg-white/75 border border-gray-300 shadow-md flex rounded-md p-2 hover:shadow-xl duration-150 hover:scale-101"
             >
               <div class="p-3">
                 <div class="block w-full">
-                  <img src="./images/Headphone-photo.png" alt="" />
+                  <img src="./images/Headphone-photo.png" alt="headphone" />
                 </div>
                 <div class="block h-12 overflow-clip">
                   هدفون بلوتوثی انکر مدل Soundcore R50i
@@ -897,11 +922,11 @@
           >
           <a href="./KalaPages/jurabPage.html"
             ><article
-              class="bg-white border border-gray-300 shadow-md flex rounded-md p-2 hover:shadow-xl duration-150 hover:scale-101"
+              class="bg-white/75 border border-gray-300 shadow-md flex rounded-md p-2 hover:shadow-xl duration-150 hover:scale-101"
             >
               <div class="p-3">
                 <div class="block w-full">
-                  <img src="./images/ـJurab-photo.png" alt="" />
+                  <img src="./images/ـJurab-photo.png" alt="jurab" />
                 </div>
                 <div class="block h-12 overflow-clip">
                   جوراب ساق بلند مردانه سیرداش طرح ساده مدل 311 بسته 3 عددی
@@ -923,11 +948,11 @@
           >
           <a href="./KalaPages/headphone.html"
             ><article
-              class="bg-white border border-gray-300 shadow-md flex rounded-md p-2 hover:shadow-xl duration-150 hover:scale-101"
+              class="bg-white/75 border border-gray-300 shadow-md flex rounded-md p-2 hover:shadow-xl duration-150 hover:scale-101"
             >
               <div class="p-3">
                 <div class="block w-full">
-                  <img src="./images/Headphone-photo.png" alt="" />
+                  <img src="./images/Headphone-photo.png" alt="headphone" />
                 </div>
                 <div class="block h-12 overflow-clip">
                   هدفون بلوتوثی انکر مدل Soundcore R50i
@@ -963,7 +988,7 @@
               <img
                 class="rounded-full w-10 h-8 float-left"
                 src="./images/Minimal Blue Shopping Cart Emblem.png"
-                alt=""
+                alt="logo"
               />
             </div>
           </div>
